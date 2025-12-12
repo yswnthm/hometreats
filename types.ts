@@ -2,7 +2,6 @@ export interface MenuItem {
   id: string;
   name: string;
   scentProfile: string;
-  price: string;
   image: string;
   heatLevel: 'warm' | 'rich' | 'sweet'; // Determines heatmap color
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import { Menu, ShoppingBag, Beaker } from 'lucide-react';
+import { Menu, ArrowRight, Beaker } from 'lucide-react';
 
 const Header: React.FC = () => {
   const { scrollY } = useScroll();
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
             <Menu className="text-espresso" />
           </button>
           <button className="bg-espresso text-linen px-5 py-2 rounded-sm font-mono text-xs uppercase tracking-widest hover:bg-burntsugar transition-colors flex items-center gap-2">
-            Cart <ShoppingBag size={14} />
+            GET TO KNOW <ArrowRight size={14} />
           </button>
         </div>
       </div>

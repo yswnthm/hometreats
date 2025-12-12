@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { MenuItem } from '../types';
 
 const items: MenuItem[] = [
-  { id: '1', name: 'Fudge Lasagne', scentProfile: 'Molten layers', price: '8.00', heatLevel: 'rich', image: 'https://loremflickr.com/800/600/fudge,cake?random=40' },
-  { id: '2', name: 'Salted Cookie', scentProfile: 'Crisp edges', price: '4.50', heatLevel: 'warm', image: 'https://loremflickr.com/800/600/cookie,chocolatechip?random=41' },
-  { id: '3', name: 'Lemon Tea Cake', scentProfile: 'Zest & steam', price: '6.00', heatLevel: 'sweet', image: 'https://loremflickr.com/800/600/lemoncake,tea?random=42' },
-  { id: '4', name: 'Warm Pita', scentProfile: 'Yeast & fire', price: '5.00', heatLevel: 'warm', image: 'https://loremflickr.com/800/600/pita,bread?random=43' },
-  { id: '5', name: 'Berry Jam', scentProfile: 'Reduction', price: '9.00', heatLevel: 'sweet', image: 'https://loremflickr.com/800/600/jam,berry?random=44' },
+  { id: '1', name: 'Fudge Lasagne', scentProfile: 'Molten layers', heatLevel: 'rich', image: 'https://loremflickr.com/800/600/fudge,cake?random=40' },
+  { id: '2', name: 'Salted Cookie', scentProfile: 'Crisp edges', heatLevel: 'warm', image: 'https://loremflickr.com/800/600/cookie,chocolatechip?random=41' },
+  { id: '3', name: 'Lemon Tea Cake', scentProfile: 'Zest & steam', heatLevel: 'sweet', image: 'https://loremflickr.com/800/600/lemoncake,tea?random=42' },
+  { id: '4', name: 'Warm Pita', scentProfile: 'Yeast & fire', heatLevel: 'warm', image: 'https://loremflickr.com/800/600/pita,bread?random=43' },
+  { id: '5', name: 'Berry Jam', scentProfile: 'Reduction', heatLevel: 'sweet', image: 'https://loremflickr.com/800/600/jam,berry?random=44' },
 ];
 
 const heatColors = {
@@ -62,7 +62,6 @@ const SignatureSpectrum: React.FC = () => {
 
               <div className="mt-8 text-center relative z-20">
                 <h3 className="text-xl font-serif text-espresso mb-1">{item.name}</h3>
-                <p className="font-mono text-sm text-burntsugar">${item.price}</p>
 
                 {/* Scent Note Reveal */}
                 <motion.div
