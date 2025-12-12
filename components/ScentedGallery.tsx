@@ -13,8 +13,8 @@ const ScentedGallery: React.FC = () => {
   const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
   return (
-    <section className="py-24 bg-espresso text-linen relative overflow-hidden">
-      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="py-24 bg-espresso text-linen relative">
+      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
         {/* Text Side */}
         <div className="sticky top-24">
