@@ -9,7 +9,7 @@ const modules: LabModule[] = [
     title: 'The Layer Studio',
     code: 'LYR-84',
     description: 'Hundreds of micro-layers of butter and dough, folded by hand every morning.',
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop', // Dough layers
+    image: 'https://loremflickr.com/800/600/croissant,puffpastry?random=30', // Dough layers
     microStudy: ['Butterfat: 84%', 'Fold Count: 27', 'Temp: 16°C']
   },
   {
@@ -17,7 +17,7 @@ const modules: LabModule[] = [
     title: 'Cocoa Cellar',
     code: 'COC-70',
     description: 'Chocolate melted slowly. Berries reduced to jam. Nothing rushed.',
-    image: 'https://images.unsplash.com/photo-1606312619070-d48b7065e1b4?q=80&w=2072&auto=format&fit=crop', // Melting chocolate
+    image: 'https://loremflickr.com/800/600/chocolate,melted?random=31', // Melting chocolate
     microStudy: ['Origin: Ecuador', 'Roast: Dark', 'Notes: Smoke']
   },
   {
@@ -25,7 +25,7 @@ const modules: LabModule[] = [
     title: 'Dough Matrix',
     code: 'FMT-48',
     description: 'Our mother dough is 7 years old. Ferments slowly for complex flavor.',
-    image: 'https://images.unsplash.com/photo-1585476985392-23c50979848b?q=80&w=2072&auto=format&fit=crop', // Sourdough texture
+    image: 'https://loremflickr.com/800/600/sourdough,starter?random=32', // Sourdough texture
     microStudy: ['Age: 7 Years', 'Hydration: 78%', 'Rest: 48h']
   }
 ];
@@ -37,13 +37,13 @@ const CraftLab: React.FC = () => {
     <section className="py-24 px-6 bg-almond/20">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-end justify-between mb-16">
-           <div>
-             <span className="font-mono text-burntsugar text-xs tracking-widest block mb-2">// INGREDIENT INTELLIGENCE</span>
-             <h2 className="text-4xl lg:text-6xl font-serif text-espresso">The Craft Lab</h2>
-           </div>
-           <div className="hidden md:block">
-             <Activity className="text-raspberry opacity-50" />
-           </div>
+          <div>
+            <span className="font-mono text-burntsugar text-xs tracking-widest block mb-2">// INGREDIENT INTELLIGENCE</span>
+            <h2 className="text-4xl lg:text-6xl font-serif text-espresso">The Craft Lab</h2>
+          </div>
+          <div className="hidden md:block">
+            <Activity className="text-raspberry opacity-50" />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -68,7 +68,7 @@ const CraftLab: React.FC = () => {
                 </div>
 
                 <h3 className="text-3xl font-serif mb-2 relative z-10">{mod.title}</h3>
-                
+
                 <AnimatePresence>
                   {activeModule === mod.id && (
                     <motion.div
@@ -80,7 +80,7 @@ const CraftLab: React.FC = () => {
                       <p className="font-sans text-linen/90 mb-6 leading-relaxed max-w-lg border-l-2 border-raspberry pl-4 mt-4">
                         {mod.description}
                       </p>
-                      
+
                       {/* Diagrammatic Data */}
                       <div className="grid grid-cols-3 gap-4 border-t border-white/20 pt-4">
                         {mod.microStudy.map((stat, idx) => (
@@ -96,8 +96,8 @@ const CraftLab: React.FC = () => {
                 </AnimatePresence>
 
                 {!activeModule && (
-                  <motion.div 
-                    initial={{ opacity: 0 }} 
+                  <motion.div
+                    initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     className="absolute bottom-8 right-8"
                   >
