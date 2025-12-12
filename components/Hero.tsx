@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
           />
 
           <motion.img
-            src="https://loremflickr.com/800/600/cake,chocolate?random=1"
+            src="/images/hero-chocolate-cake.jpg"
             alt="Macro texture of artisan chocolate cake"
             className="relative z-10 w-full h-[120%] object-cover rounded-none shadow-2xl"
             initial={{ scale: 1.1, filter: "blur(10px)", opacity: 0 }}
