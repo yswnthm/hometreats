@@ -32,7 +32,7 @@ const Header: React.FC = () => {
           <div className="w-8 h-8 border border-espresso/20 flex items-center justify-center text-espresso rounded-sm">
             <Beaker size={16} />
           </div>
-          <span className="font-serif font-bold text-lg text-espresso tracking-tight">HomeTreats <span className="font-mono text-[10px] font-normal text-burntsugar uppercase">Lab</span></span>
+          <span className="font-serif font-bold text-lg text-espresso tracking-tight">AMTAMS <span className="font-mono text-[10px] font-normal text-burntsugar uppercase">Lab</span></span>
         </div>
 
         <nav className="hidden md:flex gap-8 items-center font-mono text-xs uppercase tracking-widest text-espresso/70">

@@ -27,8 +27,7 @@ const Hero: React.FC = () => {
             </div>
 
             <h1 className="text-6xl lg:text-8xl font-serif text-espresso leading-[0.9] tracking-tight mb-8">
-              Home<br />
-              <span className="italic font-light text-burntsugar">Treats</span>
+              AMTAMS
             </h1>
 
             <motion.p
