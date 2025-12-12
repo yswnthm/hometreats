@@ -17,7 +17,7 @@ const ScentedGallery: React.FC = () => {
       <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
         {/* Text Side */}
-        <div className="sticky top-24">
+        <div className="sticky top-0 h-screen flex flex-col justify-center">
           <h2 className="text-4xl lg:text-6xl font-serif mb-6 leading-tight">
             Atmosphere of<br />
             <span className="text-burntsugar italic">Pure Comfort</span>
